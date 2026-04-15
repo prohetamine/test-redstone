@@ -39,7 +39,7 @@ export const UseNote = ({ id, onChange, placeholder, data, commission: _commissi
   const [value, setValue] = useState('')
 
   const note = Redstone.useNote(id, data)
-      , cert = Redstone.useCertificate(id)
+      , cert = Redstone.useCertificate(id, { paymentAddress: data.paymentAddress })
       , confirm = useStasPay()
 
   useEffect(() => {
@@ -107,7 +107,7 @@ export const UseNote = ({ id, onChange, placeholder, data, commission: _commissi
 export const UseList = ({ id, placeholder, data, commission: _commission }) => {
   const [state, setState] = useState('')
   const list = Redstone.useList(id, data)
-      , cert = Redstone.useCertificate(id)
+      , cert = Redstone.useCertificate(id, { paymentAddress: data.paymentAddress })
       , confirm = useStasPay()
 
   const handleClick = async () => {
@@ -250,7 +250,7 @@ export const UseReadListItem = ({ id, onChange, find = {}, data = {} }) => {
 
 export const UseCounter = ({ id, data, placeholder, commission: _commission }) => {
   const counter = Redstone.useCounter(id, data)
-      , cert = Redstone.useCertificate(id)
+      , cert = Redstone.useCertificate(id, { paymentAddress: data.paymentAddress })
       , confirm = useStasPay()
 
   const handleClick = async () => {

@@ -12,7 +12,7 @@ import UseReadNote from './routers/UseReadNote.jsx'
 import UseReadListItem from './routers/UseReadListItem.jsx'
 import UseList from './routers/UseList.jsx'
 import UseCounter from './routers/UseCounter.jsx'
-import UseCertificate from './routers/useCertificate.jsx'
+import UseCertificate from './routers/UseCertificate.jsx'
 import { UseReadStatistics } from './components.jsx'
 
 const config = {

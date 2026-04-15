@@ -68,13 +68,13 @@ const _UseNote = () => {
         />
         <UseNote 
           id='un-[stas]' 
-          data={{ stas: true }} 
+          data={{ stas: true, paymentAddress: '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266' }} 
           commission={9} 
           placeholder='Write? Pay 10 STAS coin'
         />
         <UseNote 
           id='un-[stas]' 
-          data={{ stas: true, copyId: 1 }} 
+          data={{ stas: true, paymentAddress: '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', copyId: 1 }} 
           commission={9} 
           placeholder='Write? Pay 10 STAS coin (COPY)'
         />

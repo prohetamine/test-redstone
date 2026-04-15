@@ -63,13 +63,13 @@ const _UseCounter = () => {
         />
         <UseCounter 
           id='uc-[stas]' 
-          data={{ stas: true }} 
+          data={{ stas: true, paymentAddress: '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266' }} 
           commission={2} 
           placeholder='Vote? Pay 3 STAS coin'
         />
         <UseCounter 
           id='uc-[stas]' 
-          data={{ stas: true, copyId: 1 }} 
+          data={{ stas: true, copyId: 1, paymentAddress: '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266' }} 
           commission={2} 
           placeholder='Vote? Pay 3 STAS coin (COPY)'
         />
